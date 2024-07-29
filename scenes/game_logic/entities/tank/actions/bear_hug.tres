@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Action" load_steps=3 format=3 uid="uid://bsli1oruth2r6"]
+
+[ext_resource type="Resource" uid="uid://6lj3glmutwm" path="res://scenes/game_logic/entities/tank/actions/bear_hug_qte.tres" id="1_2m3bd"]
+[ext_resource type="Script" path="res://scenes/game_logic/actions/action.gd" id="1_t0ncu"]
+
+[resource]
+script = ExtResource("1_t0ncu")
+action_name = "Bear Hug"
+action_count = 1
+targets_friend = false
+qte_stats = ExtResource("1_2m3bd")
+magic_use = 0
+damage = 3
+hit_rate = 1.0
+heal_percent = 0.0

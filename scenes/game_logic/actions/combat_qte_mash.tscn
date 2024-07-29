@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ekg1t0kn4k32"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/actions/combat_qte_mash.gd" id="1_16cp6"]
+
+[node name="MashQTE" type="ProgressBar"]
+offset_right = 4.0
+offset_bottom = 4.0
+fill_mode = 3
+show_percentage = false
+script = ExtResource("1_16cp6")

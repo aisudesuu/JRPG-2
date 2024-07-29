@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QTEStats" load_steps=2 format=3 uid="uid://6lj3glmutwm"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/actions/qte_stats.gd" id="1_vf1hr"]
+
+[resource]
+script = ExtResource("1_vf1hr")
+quick_time_event = 0
+result_bad = 0.0
+result_good = 0.5
+result_great = 1.0
+sequence = Array[InputEventKey]([])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Action" load_steps=3 format=3 uid="uid://d1rlitkmn6gyv"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/actions/action.gd" id="1_77kg3"]
+[ext_resource type="Resource" uid="uid://r4vysi5xr57k" path="res://scenes/game_logic/entities/rogue/actions/trash_trap_qte.tres" id="1_i8ke5"]
+
+[resource]
+script = ExtResource("1_77kg3")
+action_name = "Trash Trap"
+action_count = 2
+targets_friend = false
+qte_stats = ExtResource("1_i8ke5")
+magic_use = 0
+damage = 8
+hit_rate = 0.75
+heal_percent = 0.0

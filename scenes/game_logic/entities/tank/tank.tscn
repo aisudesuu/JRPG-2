@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://qjaxovg7absy"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/entities/battler.gd" id="1_vwpme"]
+[ext_resource type="Resource" uid="uid://cwnkt6bc85cxq" path="res://scenes/game_logic/entities/tank/tank_stats.tres" id="2_1beix"]
+[ext_resource type="Texture2D" uid="uid://cxs8r58t4p4r5" path="res://icon.svg" id="3_rkp4l"]
+[ext_resource type="PackedScene" uid="uid://bcm7pqw0h6ic" path="res://scenes/game_logic/components/entity_selector.tscn" id="4_vkx3i"]
+[ext_resource type="Script" path="res://scenes/game_logic/components/health_component.gd" id="5_ybh1s"]
+[ext_resource type="Script" path="res://scenes/game_logic/components/action_component.gd" id="6_sq1qn"]
+
+[node name="Tank" type="Node2D" node_paths=PackedStringArray("health_component", "action_component", "entity_selector")]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_vwpme")
+stats = ExtResource("2_1beix")
+health_component = NodePath("Components/HealthComponent")
+action_component = NodePath("Components/ActionComponent")
+entity_selector = NodePath("Components/EntitySelector")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_rkp4l")
+
+[node name="Components" type="Node" parent="."]
+
+[node name="EntitySelector" parent="Components" node_paths=PackedStringArray("parent", "parent_sprite") instance=ExtResource("4_vkx3i")]
+parent = NodePath("../..")
+parent_sprite = NodePath("../../Sprite2D")
+
+[node name="HealthComponent" type="Node" parent="Components" node_paths=PackedStringArray("health_display")]
+script = ExtResource("5_ybh1s")
+health_display = NodePath("../../ProgressBar")
+
+[node name="ActionComponent" type="Node" parent="Components" node_paths=PackedStringArray("health_component")]
+script = ExtResource("6_sq1qn")
+health_component = NodePath("../HealthComponent")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -60.0
+offset_top = -99.0
+offset_right = 60.0
+offset_bottom = -72.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="."]
+offset_left = -78.0
+offset_top = -65.0
+offset_right = 11.0
+offset_bottom = -42.0
+rotation = -0.349066
+text = "Tank"
+metadata/_edit_use_anchors_ = true

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dexhef1t0mb6i"
+path="res://.godot/imported/block-moving-large.obj-57ebf3925acb38f27257339ec8010728.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-moving-large.obj-57ebf3925acb38f27257339ec8010728.mesh"]
+
+source_file="res://assets/art/kenny3dtiles/block-moving-large.obj"
+dest_files=["res://.godot/imported/block-moving-large.obj-57ebf3925acb38f27257339ec8010728.mesh", "res://.godot/imported/block-moving-large.obj-57ebf3925acb38f27257339ec8010728.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

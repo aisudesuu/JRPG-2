@@ -1,0 +1,8 @@
+{
+"name": "test_npc",
+"lines": {
+	"0": "this is a basic first line of dialogue",
+	"1": "respond with [b]primary click[/b] or [b]secondary click[/b]",
+	"2": "hello"
+	}
+}

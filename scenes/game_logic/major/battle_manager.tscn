@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b06ldqp67mhmu"]
+
+[ext_resource type="PackedScene" uid="uid://ccvlu6ostvpdh" path="res://scenes/game_logic/major/turn_manager.tscn" id="1_qqqoo"]
+[ext_resource type="PackedScene" uid="uid://cjfa3hadq4aa3" path="res://scenes/menu/battle_menus/player_action_menus.tscn" id="2_f0h0v"]
+
+[node name="BattleManager" type="Node"]
+
+[node name="TurnManager" parent="." node_paths=PackedStringArray("player_action_menus") instance=ExtResource("1_qqqoo")]
+player_action_menus = NodePath("../PlayerActionMenus")
+
+[node name="PlayerActionMenus" parent="." instance=ExtResource("2_f0h0v")]
+offset_left = 37.0
+offset_top = 542.0
+offset_right = 77.0
+offset_bottom = 582.0

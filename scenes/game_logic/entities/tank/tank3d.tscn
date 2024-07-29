@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://bj7y63jndgdrr"]
+
+[ext_resource type="Texture2D" uid="uid://cxs8r58t4p4r5" path="res://icon.svg" id="1_nqce5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vsomd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4624"]
+atlas = ExtResource("1_nqce5")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vsb4o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4624")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_vsomd")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vsb4o")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.990163, 0.139916, 0, -0.139916, 0.990163, 0, 0.835518, 2.04043)
+fov = 80.0

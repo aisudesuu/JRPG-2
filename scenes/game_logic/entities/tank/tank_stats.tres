@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="BattlerStatistics" load_steps=5 format=3 uid="uid://cwnkt6bc85cxq"]
+
+[ext_resource type="Resource" uid="uid://bsli1oruth2r6" path="res://scenes/game_logic/entities/tank/actions/bear_hug.tres" id="1_uwiym"]
+[ext_resource type="Script" path="res://scenes/game_logic/actions/action.gd" id="2_6gjso"]
+[ext_resource type="Script" path="res://scenes/game_logic/entities/battler_statistics.gd" id="2_fxdnr"]
+
+[sub_resource type="Resource" id="Resource_4mcbg"]
+script = ExtResource("2_6gjso")
+action_name = "Hammer Slammer"
+action_count = 1
+targets_friend = false
+magic_use = 0
+damage = 15
+hit_rate = 0.88
+heal_percent = 0.0
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("2_fxdnr")
+max_health = 80
+df_power = 5
+df_defense = 7
+df_speed = 3
+actions = Array[ExtResource("2_6gjso")]([ExtResource("1_uwiym"), SubResource("Resource_4mcbg")])
+is_party_member = true

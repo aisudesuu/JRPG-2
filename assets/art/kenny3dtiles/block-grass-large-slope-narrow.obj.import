@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c845r0jab7ksi"
+path="res://.godot/imported/block-grass-large-slope-narrow.obj-0578caf95a7211ae8392fe6be483a5ff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-grass-large-slope-narrow.obj-0578caf95a7211ae8392fe6be483a5ff.mesh"]
+
+source_file="res://assets/art/kenny3dtiles/block-grass-large-slope-narrow.obj"
+dest_files=["res://.godot/imported/block-grass-large-slope-narrow.obj-0578caf95a7211ae8392fe6be483a5ff.mesh", "res://.godot/imported/block-grass-large-slope-narrow.obj-0578caf95a7211ae8392fe6be483a5ff.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

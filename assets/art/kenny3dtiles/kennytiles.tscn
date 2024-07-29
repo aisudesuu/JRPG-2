@@ -1,0 +1,572 @@
+[gd_scene load_steps=143 format=3 uid="uid://dp42sdiidin4r"]
+
+[ext_resource type="ArrayMesh" uid="uid://dbib1e61f2pil" path="res://assets/art/kenny3dtiles/arrow.obj" id="1_10vio"]
+[ext_resource type="ArrayMesh" uid="uid://buobqegy6ras7" path="res://assets/art/kenny3dtiles/arrows.obj" id="2_8iosn"]
+[ext_resource type="ArrayMesh" uid="uid://dtwdkq4e4djxt" path="res://assets/art/kenny3dtiles/barrel.obj" id="3_mmx0l"]
+[ext_resource type="ArrayMesh" uid="uid://suvpljr343rt" path="res://assets/art/kenny3dtiles/block-grass-corner-low.obj" id="4_1fqk5"]
+[ext_resource type="ArrayMesh" uid="uid://b541sekvyqtlu" path="res://assets/art/kenny3dtiles/block-grass-corner-overhang-low.obj" id="5_u4ecm"]
+[ext_resource type="ArrayMesh" uid="uid://ionrhppqkkkt" path="res://assets/art/kenny3dtiles/block-grass-corner-overhang.obj" id="6_42wds"]
+[ext_resource type="ArrayMesh" uid="uid://dx2dcwh50p1t7" path="res://assets/art/kenny3dtiles/block-grass-corner.obj" id="7_50v0n"]
+[ext_resource type="ArrayMesh" uid="uid://djkidhahracq" path="res://assets/art/kenny3dtiles/block-grass-curve-half.obj" id="8_j5coh"]
+[ext_resource type="ArrayMesh" uid="uid://dhykb8811vppf" path="res://assets/art/kenny3dtiles/block-grass-curve-low.obj" id="9_odqmb"]
+[ext_resource type="ArrayMesh" uid="uid://1qa0jxf64752" path="res://assets/art/kenny3dtiles/block-grass-curve.obj" id="10_sat55"]
+[ext_resource type="ArrayMesh" uid="uid://185uf0kydgrj" path="res://assets/art/kenny3dtiles/block-grass-edge.obj" id="11_5bqot"]
+[ext_resource type="ArrayMesh" uid="uid://wo3t1hyl5qiq" path="res://assets/art/kenny3dtiles/block-grass-hexagon.obj" id="12_sfel5"]
+[ext_resource type="ArrayMesh" uid="uid://c845r0jab7ksi" path="res://assets/art/kenny3dtiles/block-grass-large-slope-narrow.obj" id="13_l22fg"]
+[ext_resource type="ArrayMesh" uid="uid://cqak0f1gpquqi" path="res://assets/art/kenny3dtiles/block-grass-large-slope-steep-narrow.obj" id="14_3md7p"]
+[ext_resource type="ArrayMesh" uid="uid://7072jqaxofwo" path="res://assets/art/kenny3dtiles/block-grass-large-slope-steep.obj" id="15_kv4gn"]
+[ext_resource type="ArrayMesh" uid="uid://dci31846pauff" path="res://assets/art/kenny3dtiles/block-grass-large-slope.obj" id="16_mmeor"]
+[ext_resource type="ArrayMesh" uid="uid://b62i037m0vqc4" path="res://assets/art/kenny3dtiles/block-grass-large-tall.obj" id="17_mj8kp"]
+[ext_resource type="ArrayMesh" uid="uid://djl62gbydg7vb" path="res://assets/art/kenny3dtiles/block-grass-large.obj" id="18_wlqr4"]
+[ext_resource type="ArrayMesh" uid="uid://bnwo50bvwwx5i" path="res://assets/art/kenny3dtiles/block-grass-long.obj" id="19_scuin"]
+[ext_resource type="ArrayMesh" uid="uid://bbdno3swryip0" path="res://assets/art/kenny3dtiles/block-grass-low-hexagon.obj" id="20_h7bsj"]
+[ext_resource type="ArrayMesh" uid="uid://b5ltwoa7n6i1p" path="res://assets/art/kenny3dtiles/block-grass-low-large.obj" id="21_0a6x3"]
+[ext_resource type="ArrayMesh" uid="uid://bictq5sxsqfmu" path="res://assets/art/kenny3dtiles/block-grass-low-long.obj" id="22_4idkc"]
+[ext_resource type="ArrayMesh" uid="uid://dlmvdpe1w8xfj" path="res://assets/art/kenny3dtiles/block-grass-low-narrow.obj" id="23_4ol08"]
+[ext_resource type="ArrayMesh" uid="uid://degtps43ryj3l" path="res://assets/art/kenny3dtiles/block-grass-low.obj" id="24_3ihm4"]
+[ext_resource type="ArrayMesh" uid="uid://bdu6vd5ag6tuk" path="res://assets/art/kenny3dtiles/block-grass-narrow.obj" id="25_4nkn2"]
+[ext_resource type="ArrayMesh" uid="uid://1wpd3lg2eogn" path="res://assets/art/kenny3dtiles/block-grass-overhang-corner.obj" id="26_plilf"]
+[ext_resource type="ArrayMesh" uid="uid://dqvfylafrwiqg" path="res://assets/art/kenny3dtiles/block-grass-overhang-edge.obj" id="27_a5pkc"]
+[ext_resource type="ArrayMesh" uid="uid://cr50cjpejtqv8" path="res://assets/art/kenny3dtiles/block-grass-overhang-hexagon.obj" id="28_hugg4"]
+[ext_resource type="ArrayMesh" uid="uid://bjwxdpfnyjat7" path="res://assets/art/kenny3dtiles/block-grass-overhang-large-slope-narrow.obj" id="29_obd73"]
+[ext_resource type="ArrayMesh" uid="uid://cxsy5etg4ghe3" path="res://assets/art/kenny3dtiles/block-grass-overhang-large-slope-steep-narrow.obj" id="30_c0rya"]
+[ext_resource type="ArrayMesh" uid="uid://da5of8xpnx7d1" path="res://assets/art/kenny3dtiles/block-grass-overhang-large-slope-steep.obj" id="31_rj67s"]
+[ext_resource type="ArrayMesh" uid="uid://bknd0wg148we4" path="res://assets/art/kenny3dtiles/block-grass-overhang-large-slope.obj" id="32_ompna"]
+[ext_resource type="ArrayMesh" uid="uid://c05ra0a6ywbo0" path="res://assets/art/kenny3dtiles/block-grass-overhang-large-tall.obj" id="33_smqvn"]
+[ext_resource type="ArrayMesh" uid="uid://diyaxbm57dwbc" path="res://assets/art/kenny3dtiles/block-grass-overhang-large.obj" id="34_gpwsi"]
+[ext_resource type="ArrayMesh" uid="uid://dnhvu452voq1x" path="res://assets/art/kenny3dtiles/block-grass-overhang-long.obj" id="35_x7el8"]
+[ext_resource type="ArrayMesh" uid="uid://b7itewcwb8vc2" path="res://assets/art/kenny3dtiles/block-grass-overhang-low-hexagon.obj" id="36_pcesr"]
+[ext_resource type="ArrayMesh" uid="uid://hixjqhpthaer" path="res://assets/art/kenny3dtiles/block-grass-overhang-low-large.obj" id="37_ehgsb"]
+[ext_resource type="ArrayMesh" uid="uid://dp8i7vp138xb" path="res://assets/art/kenny3dtiles/block-grass-overhang-low-long.obj" id="38_casdx"]
+[ext_resource type="ArrayMesh" uid="uid://bo6f1jyv7ootf" path="res://assets/art/kenny3dtiles/block-grass-overhang-low-narrow.obj" id="39_6266q"]
+[ext_resource type="ArrayMesh" uid="uid://bc7ey2e1k02og" path="res://assets/art/kenny3dtiles/block-grass-overhang-low.obj" id="40_4vptu"]
+[ext_resource type="ArrayMesh" uid="uid://vmpp143i6ff0" path="res://assets/art/kenny3dtiles/block-grass-overhang-narrow.obj" id="41_p31o8"]
+[ext_resource type="ArrayMesh" uid="uid://dnub1dulstr7l" path="res://assets/art/kenny3dtiles/block-grass.obj" id="42_dt7b5"]
+[ext_resource type="ArrayMesh" uid="uid://c0wuesrlgrgw6" path="res://assets/art/kenny3dtiles/block-moving-blue.obj" id="43_c1tf3"]
+[ext_resource type="ArrayMesh" uid="uid://dexhef1t0mb6i" path="res://assets/art/kenny3dtiles/block-moving-large.obj" id="44_1gpe7"]
+[ext_resource type="ArrayMesh" uid="uid://dueciccvhp8rp" path="res://assets/art/kenny3dtiles/block-moving.obj" id="45_0mfvb"]
+[ext_resource type="ArrayMesh" uid="uid://dti8fg8f23h20" path="res://assets/art/kenny3dtiles/block-snow-corner-low.obj" id="46_xglw5"]
+[ext_resource type="ArrayMesh" uid="uid://cgpkp0esh6wo" path="res://assets/art/kenny3dtiles/block-snow-corner-overhang-low.obj" id="47_a4gb7"]
+[ext_resource type="ArrayMesh" uid="uid://bldpq3akt1lqq" path="res://assets/art/kenny3dtiles/block-snow-corner-overhang.obj" id="48_moieh"]
+[ext_resource type="ArrayMesh" uid="uid://beejavwkbcoxo" path="res://assets/art/kenny3dtiles/block-snow-corner.obj" id="49_1soi4"]
+[ext_resource type="ArrayMesh" uid="uid://hpa1jktfafh5" path="res://assets/art/kenny3dtiles/block-snow-curve-half.obj" id="50_ous4l"]
+[ext_resource type="ArrayMesh" uid="uid://brjldp0k41gqs" path="res://assets/art/kenny3dtiles/block-snow-curve-low.obj" id="51_8jawo"]
+[ext_resource type="ArrayMesh" uid="uid://dyyevvcgt1xtd" path="res://assets/art/kenny3dtiles/block-snow-curve.obj" id="52_n105u"]
+[ext_resource type="ArrayMesh" uid="uid://cym8qq04qdekx" path="res://assets/art/kenny3dtiles/block-snow-edge.obj" id="53_c1e07"]
+[ext_resource type="ArrayMesh" uid="uid://h2sfs4yyuuqg" path="res://assets/art/kenny3dtiles/block-snow-hexagon.obj" id="54_enx2c"]
+[ext_resource type="ArrayMesh" uid="uid://kynui2tn338w" path="res://assets/art/kenny3dtiles/block-snow-large-slope-narrow.obj" id="55_ihllo"]
+[ext_resource type="ArrayMesh" uid="uid://cmwutessadc6n" path="res://assets/art/kenny3dtiles/block-snow-large-slope-steep-narrow.obj" id="56_k5res"]
+[ext_resource type="ArrayMesh" uid="uid://c32n7uqplg1en" path="res://assets/art/kenny3dtiles/block-snow-large-slope-steep.obj" id="57_apysw"]
+[ext_resource type="ArrayMesh" uid="uid://cye166c64ulaj" path="res://assets/art/kenny3dtiles/block-snow-large-slope.obj" id="58_vbd72"]
+[ext_resource type="ArrayMesh" uid="uid://bw3bv3v4y2puo" path="res://assets/art/kenny3dtiles/block-snow-large-tall.obj" id="59_t2vjc"]
+[ext_resource type="ArrayMesh" uid="uid://vqqmrrt6ri5c" path="res://assets/art/kenny3dtiles/block-snow-large.obj" id="60_p2dwd"]
+[ext_resource type="ArrayMesh" uid="uid://ccmcyyodh3nim" path="res://assets/art/kenny3dtiles/block-snow-long.obj" id="61_0hprx"]
+[ext_resource type="ArrayMesh" uid="uid://bqqq8jch1adq6" path="res://assets/art/kenny3dtiles/block-snow-low-hexagon.obj" id="62_686c8"]
+[ext_resource type="ArrayMesh" uid="uid://mkafhyvtrpxr" path="res://assets/art/kenny3dtiles/block-snow-low-large.obj" id="63_71l14"]
+[ext_resource type="ArrayMesh" uid="uid://t552pc210eay" path="res://assets/art/kenny3dtiles/block-snow-low-long.obj" id="64_t14t7"]
+[ext_resource type="ArrayMesh" uid="uid://bgjk3a2i8dhs2" path="res://assets/art/kenny3dtiles/block-snow-low-narrow.obj" id="65_5sji4"]
+[ext_resource type="ArrayMesh" uid="uid://db15ji1jbsgpp" path="res://assets/art/kenny3dtiles/block-snow-low.obj" id="66_o4vgl"]
+[ext_resource type="ArrayMesh" uid="uid://cgervdfakh306" path="res://assets/art/kenny3dtiles/block-snow-narrow.obj" id="67_wiyot"]
+[ext_resource type="ArrayMesh" uid="uid://b5vwf7bq22woy" path="res://assets/art/kenny3dtiles/block-snow-overhang-corner.obj" id="68_fnnpl"]
+[ext_resource type="ArrayMesh" uid="uid://ljt61wj41l1" path="res://assets/art/kenny3dtiles/block-snow-overhang-edge.obj" id="69_l22tk"]
+[ext_resource type="ArrayMesh" uid="uid://bs8luvgjg08ym" path="res://assets/art/kenny3dtiles/block-snow-overhang-hexagon.obj" id="70_bpdaa"]
+[ext_resource type="ArrayMesh" uid="uid://delb56lno78gs" path="res://assets/art/kenny3dtiles/block-snow-overhang-large-slope-narrow.obj" id="71_o5tj5"]
+[ext_resource type="ArrayMesh" uid="uid://b14ysjmm6mvyf" path="res://assets/art/kenny3dtiles/block-snow-overhang-large-slope-steep-narrow.obj" id="72_hlu6f"]
+[ext_resource type="ArrayMesh" uid="uid://udf203svlplj" path="res://assets/art/kenny3dtiles/block-snow-overhang-large-slope-steep.obj" id="73_u5vkh"]
+[ext_resource type="ArrayMesh" uid="uid://ci7rs7dlbphra" path="res://assets/art/kenny3dtiles/block-snow-overhang-large-slope.obj" id="74_hmnlo"]
+[ext_resource type="ArrayMesh" uid="uid://cyyyvatnkvsb8" path="res://assets/art/kenny3dtiles/block-snow-overhang-large-tall.obj" id="75_i8fcr"]
+[ext_resource type="ArrayMesh" uid="uid://byiw1c3c5v407" path="res://assets/art/kenny3dtiles/block-snow-overhang-large.obj" id="76_8efdc"]
+[ext_resource type="ArrayMesh" uid="uid://vmjeq1tdgjhy" path="res://assets/art/kenny3dtiles/block-snow-overhang-long.obj" id="77_ahnra"]
+[ext_resource type="ArrayMesh" uid="uid://dkqvdakpgdd0l" path="res://assets/art/kenny3dtiles/block-snow-overhang-low-hexagon.obj" id="78_n4hfx"]
+[ext_resource type="ArrayMesh" uid="uid://cqx21ccpooqq8" path="res://assets/art/kenny3dtiles/block-snow-overhang-low-large.obj" id="79_qqwdy"]
+[ext_resource type="ArrayMesh" uid="uid://dx2wi4p50q52j" path="res://assets/art/kenny3dtiles/block-snow-overhang-low-long.obj" id="80_objnj"]
+[ext_resource type="ArrayMesh" uid="uid://bpad5t6ib3eti" path="res://assets/art/kenny3dtiles/block-snow-overhang-low-narrow.obj" id="81_rdb0l"]
+[ext_resource type="ArrayMesh" uid="uid://d0ih0lx2yna30" path="res://assets/art/kenny3dtiles/block-snow-overhang-low.obj" id="82_dbadp"]
+[ext_resource type="ArrayMesh" uid="uid://bpgquhjfbc6ef" path="res://assets/art/kenny3dtiles/block-snow-overhang-narrow.obj" id="83_d7ucd"]
+[ext_resource type="ArrayMesh" uid="uid://buv02uylxs6v1" path="res://assets/art/kenny3dtiles/block-snow.obj" id="84_ccsh7"]
+[ext_resource type="ArrayMesh" uid="uid://dwvt1whi5uwv7" path="res://assets/art/kenny3dtiles/bomb.obj" id="85_ffhn0"]
+[ext_resource type="ArrayMesh" uid="uid://b7nc31sebqpqp" path="res://assets/art/kenny3dtiles/button-round.obj" id="86_c2bda"]
+[ext_resource type="ArrayMesh" uid="uid://sqwtxrsiym4r" path="res://assets/art/kenny3dtiles/button-square.obj" id="87_vs5oc"]
+[ext_resource type="ArrayMesh" uid="uid://n3ttqa8tff44" path="res://assets/art/kenny3dtiles/chest.obj" id="88_j8ahy"]
+[ext_resource type="ArrayMesh" uid="uid://kuvvc6yyohq0" path="res://assets/art/kenny3dtiles/coin-bronze.obj" id="89_gk2hp"]
+[ext_resource type="ArrayMesh" uid="uid://bhbcgvp225c6g" path="res://assets/art/kenny3dtiles/coin-gold.obj" id="90_6eftx"]
+[ext_resource type="ArrayMesh" uid="uid://v0gx7bmalhtf" path="res://assets/art/kenny3dtiles/coin-silver.obj" id="91_7tpvu"]
+[ext_resource type="ArrayMesh" uid="uid://6aate1eifpbr" path="res://assets/art/kenny3dtiles/crate-item-strong.obj" id="92_731vo"]
+[ext_resource type="ArrayMesh" uid="uid://db0yejwbr4nxm" path="res://assets/art/kenny3dtiles/crate-item.obj" id="93_6xbmc"]
+[ext_resource type="ArrayMesh" uid="uid://coybao087uc16" path="res://assets/art/kenny3dtiles/crate-strong.obj" id="94_14r1p"]
+[ext_resource type="ArrayMesh" uid="uid://ddrcabulj4g5c" path="res://assets/art/kenny3dtiles/crate.obj" id="95_bphr6"]
+[ext_resource type="ArrayMesh" uid="uid://b42ufu42noerh" path="res://assets/art/kenny3dtiles/door-large-open.obj" id="96_i8rjp"]
+[ext_resource type="ArrayMesh" uid="uid://7gtv0cnru2ls" path="res://assets/art/kenny3dtiles/door-open.obj" id="97_5rqi0"]
+[ext_resource type="ArrayMesh" uid="uid://dmd1bq6slv5st" path="res://assets/art/kenny3dtiles/door-rotate-large.obj" id="98_52mdi"]
+[ext_resource type="ArrayMesh" uid="uid://brhoqlod6j4rc" path="res://assets/art/kenny3dtiles/door-rotate.obj" id="99_xne7b"]
+[ext_resource type="ArrayMesh" uid="uid://pntk7cxk6vf1" path="res://assets/art/kenny3dtiles/fence-broken.obj" id="100_pmawx"]
+[ext_resource type="ArrayMesh" uid="uid://vm01wwt0hu0p" path="res://assets/art/kenny3dtiles/fence-corner-curved.obj" id="101_1w53s"]
+[ext_resource type="ArrayMesh" uid="uid://n8ctyxqp5a88" path="res://assets/art/kenny3dtiles/fence-corner.obj" id="102_mbsru"]
+[ext_resource type="ArrayMesh" uid="uid://bv3oviwx4xg4h" path="res://assets/art/kenny3dtiles/fence-low-broken.obj" id="103_f0bi0"]
+[ext_resource type="ArrayMesh" uid="uid://b74jk1brdlny1" path="res://assets/art/kenny3dtiles/fence-low-corner-curved.obj" id="104_s7s2a"]
+[ext_resource type="ArrayMesh" uid="uid://r5p8nixpy33k" path="res://assets/art/kenny3dtiles/fence-low-corner.obj" id="105_rs5us"]
+[ext_resource type="ArrayMesh" uid="uid://llj5jo4713g4" path="res://assets/art/kenny3dtiles/fence-low-straight.obj" id="106_6xqq2"]
+[ext_resource type="ArrayMesh" uid="uid://0onib2byjjkr" path="res://assets/art/kenny3dtiles/fence-straight.obj" id="107_ao2l3"]
+[ext_resource type="ArrayMesh" uid="uid://cgo5gla8em4q4" path="res://assets/art/kenny3dtiles/flag.obj" id="108_vxwtu"]
+[ext_resource type="ArrayMesh" uid="uid://dhvc05x5uomh6" path="res://assets/art/kenny3dtiles/flowers-tall.obj" id="109_okuwl"]
+[ext_resource type="ArrayMesh" uid="uid://obgvkkgnhg0f" path="res://assets/art/kenny3dtiles/flowers.obj" id="110_62tb4"]
+[ext_resource type="ArrayMesh" uid="uid://c5clqah71wpi8" path="res://assets/art/kenny3dtiles/grass.obj" id="111_u34vb"]
+[ext_resource type="ArrayMesh" uid="uid://bjhtjjrebna2m" path="res://assets/art/kenny3dtiles/heart.obj" id="112_htgqo"]
+[ext_resource type="ArrayMesh" uid="uid://gsbhls4a8er8" path="res://assets/art/kenny3dtiles/hedge-corner.obj" id="113_7pgjp"]
+[ext_resource type="ArrayMesh" uid="uid://8hh0pd136eak" path="res://assets/art/kenny3dtiles/hedge.obj" id="114_hiru4"]
+[ext_resource type="ArrayMesh" uid="uid://c3t66jt3db3sa" path="res://assets/art/kenny3dtiles/jewel.obj" id="115_e1tk3"]
+[ext_resource type="ArrayMesh" uid="uid://dctffqqrfjjvr" path="res://assets/art/kenny3dtiles/key.obj" id="116_ohby7"]
+[ext_resource type="ArrayMesh" uid="uid://ck832pb7qvwxi" path="res://assets/art/kenny3dtiles/ladder-broken.obj" id="117_o3bwj"]
+[ext_resource type="ArrayMesh" uid="uid://bna3fi5bnbx1r" path="res://assets/art/kenny3dtiles/ladder-long.obj" id="118_e2t1b"]
+[ext_resource type="ArrayMesh" uid="uid://d3boaeturwrr6" path="res://assets/art/kenny3dtiles/ladder.obj" id="119_pycnh"]
+[ext_resource type="ArrayMesh" uid="uid://j6lekjkfwmjs" path="res://assets/art/kenny3dtiles/lever.obj" id="120_awnin"]
+[ext_resource type="ArrayMesh" uid="uid://s42sgniqqkdr" path="res://assets/art/kenny3dtiles/lock.obj" id="121_hjevh"]
+[ext_resource type="ArrayMesh" uid="uid://b1rj2lj56p5x8" path="res://assets/art/kenny3dtiles/mushrooms.obj" id="122_2wg5b"]
+[ext_resource type="ArrayMesh" uid="uid://b8hy7r50v13jn" path="res://assets/art/kenny3dtiles/plant.obj" id="123_adybi"]
+[ext_resource type="ArrayMesh" uid="uid://d1nfro2nq6len" path="res://assets/art/kenny3dtiles/platform-fortified.obj" id="124_q51sl"]
+[ext_resource type="ArrayMesh" uid="uid://bhlcuk2qajv4u" path="res://assets/art/kenny3dtiles/platform-overhang.obj" id="125_y68x7"]
+[ext_resource type="ArrayMesh" uid="uid://dp3on54y3hvcf" path="res://assets/art/kenny3dtiles/platform-ramp.obj" id="126_lp1od"]
+[ext_resource type="ArrayMesh" uid="uid://bpxohsripoggq" path="res://assets/art/kenny3dtiles/platform.obj" id="127_87fh8"]
+[ext_resource type="ArrayMesh" uid="uid://dbsvlfnkst088" path="res://assets/art/kenny3dtiles/poles.obj" id="128_v0smd"]
+[ext_resource type="ArrayMesh" uid="uid://tlfx418abiyn" path="res://assets/art/kenny3dtiles/rocks.obj" id="129_eire8"]
+[ext_resource type="ArrayMesh" uid="uid://c10o1trrlg38p" path="res://assets/art/kenny3dtiles/saw.obj" id="130_lye6x"]
+[ext_resource type="ArrayMesh" uid="uid://8geesf0cpp7k" path="res://assets/art/kenny3dtiles/sign.obj" id="131_kpbu5"]
+[ext_resource type="ArrayMesh" uid="uid://bkjqa4byw5u3v" path="res://assets/art/kenny3dtiles/spike-block-wide.obj" id="132_7u7ay"]
+[ext_resource type="ArrayMesh" uid="uid://ckma687wq8h45" path="res://assets/art/kenny3dtiles/spike-block.obj" id="133_vmer3"]
+[ext_resource type="ArrayMesh" uid="uid://c7d5wsikjpjd8" path="res://assets/art/kenny3dtiles/stones.obj" id="134_upkry"]
+[ext_resource type="ArrayMesh" uid="uid://dhmtyhllj6qsv" path="res://assets/art/kenny3dtiles/trap-spikes-large.obj" id="135_dswbx"]
+[ext_resource type="ArrayMesh" uid="uid://d17y2fk87tsvv" path="res://assets/art/kenny3dtiles/trap-spikes.obj" id="136_g8c21"]
+[ext_resource type="ArrayMesh" uid="uid://co15md1y6gbgu" path="res://assets/art/kenny3dtiles/tree-pine-small.obj" id="137_ab8bs"]
+[ext_resource type="ArrayMesh" uid="uid://decumeq86fxr7" path="res://assets/art/kenny3dtiles/tree-pine-snow-small.obj" id="138_51t58"]
+[ext_resource type="ArrayMesh" uid="uid://kqbyv7vboiex" path="res://assets/art/kenny3dtiles/tree-pine-snow.obj" id="139_aqmbc"]
+[ext_resource type="ArrayMesh" uid="uid://dvwkkpwi6uigu" path="res://assets/art/kenny3dtiles/tree-pine.obj" id="140_mqpjn"]
+[ext_resource type="ArrayMesh" uid="uid://cx6q27v8lgpjn" path="res://assets/art/kenny3dtiles/tree-snow.obj" id="141_ylifr"]
+[ext_resource type="ArrayMesh" uid="uid://vscq3cm662lc" path="res://assets/art/kenny3dtiles/tree.obj" id="142_q73c1"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Arrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_10vio")
+
+[node name="Arrows" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_8iosn")
+
+[node name="Barrel" type="MeshInstance3D" parent="."]
+mesh = ExtResource("3_mmx0l")
+
+[node name="Block-grass-corner-low" type="MeshInstance3D" parent="."]
+mesh = ExtResource("4_1fqk5")
+
+[node name="Block-grass-corner-overhang-low" type="MeshInstance3D" parent="."]
+mesh = ExtResource("5_u4ecm")
+
+[node name="Block-grass-corner-overhang" type="MeshInstance3D" parent="."]
+mesh = ExtResource("6_42wds")
+
+[node name="Block-grass-corner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("7_50v0n")
+
+[node name="Block-grass-curve-half" type="MeshInstance3D" parent="."]
+mesh = ExtResource("8_j5coh")
+
+[node name="Block-grass-curve-low" type="MeshInstance3D" parent="."]
+mesh = ExtResource("9_odqmb")
+
+[node name="Block-grass-curve" type="MeshInstance3D" parent="."]
+mesh = ExtResource("10_sat55")
+
+[node name="Block-grass-edge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("11_5bqot")
+
+[node name="Block-grass-hexagon" type="MeshInstance3D" parent="."]
+mesh = ExtResource("12_sfel5")
+
+[node name="Block-grass-large-slope-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("13_l22fg")
+
+[node name="Block-grass-large-slope-steep-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("14_3md7p")
+
+[node name="Block-grass-large-slope-steep" type="MeshInstance3D" parent="."]
+mesh = ExtResource("15_kv4gn")
+
+[node name="Block-grass-large-slope" type="MeshInstance3D" parent="."]
+mesh = ExtResource("16_mmeor")
+
+[node name="Block-grass-large-tall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("17_mj8kp")
+
+[node name="Block-grass-large" type="MeshInstance3D" parent="."]
+mesh = ExtResource("18_wlqr4")
+
+[node name="Block-grass-long" type="MeshInstance3D" parent="."]
+mesh = ExtResource("19_scuin")
+
+[node name="Block-grass-low-hexagon" type="MeshInstance3D" parent="."]
+mesh = ExtResource("20_h7bsj")
+
+[node name="Block-grass-low-large" type="MeshInstance3D" parent="."]
+mesh = ExtResource("21_0a6x3")
+
+[node name="Block-grass-low-long" type="MeshInstance3D" parent="."]
+mesh = ExtResource("22_4idkc")
+
+[node name="Block-grass-low-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("23_4ol08")
+
+[node name="Block-grass-low" type="MeshInstance3D" parent="."]
+mesh = ExtResource("24_3ihm4")
+
+[node name="Block-grass-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("25_4nkn2")
+
+[node name="Block-grass-overhang-corner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("26_plilf")
+
+[node name="Block-grass-overhang-edge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("27_a5pkc")
+
+[node name="Block-grass-overhang-hexagon" type="MeshInstance3D" parent="."]
+mesh = ExtResource("28_hugg4")
+
+[node name="Block-grass-overhang-large-slope-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("29_obd73")
+
+[node name="Block-grass-overhang-large-slope-steep-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("30_c0rya")
+
+[node name="Block-grass-overhang-large-slope-steep" type="MeshInstance3D" parent="."]
+mesh = ExtResource("31_rj67s")
+
+[node name="Block-grass-overhang-large-slope" type="MeshInstance3D" parent="."]
+mesh = ExtResource("32_ompna")
+
+[node name="Block-grass-overhang-large-tall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("33_smqvn")
+
+[node name="Block-grass-overhang-large" type="MeshInstance3D" parent="."]
+mesh = ExtResource("34_gpwsi")
+
+[node name="Block-grass-overhang-long" type="MeshInstance3D" parent="."]
+mesh = ExtResource("35_x7el8")
+
+[node name="Block-grass-overhang-low-hexagon" type="MeshInstance3D" parent="."]
+mesh = ExtResource("36_pcesr")
+
+[node name="Block-grass-overhang-low-large" type="MeshInstance3D" parent="."]
+mesh = ExtResource("37_ehgsb")
+
+[node name="Block-grass-overhang-low-long" type="MeshInstance3D" parent="."]
+mesh = ExtResource("38_casdx")
+
+[node name="Block-grass-overhang-low-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("39_6266q")
+
+[node name="Block-grass-overhang-low" type="MeshInstance3D" parent="."]
+mesh = ExtResource("40_4vptu")
+
+[node name="Block-grass-overhang-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("41_p31o8")
+
+[node name="Block-grass" type="MeshInstance3D" parent="."]
+mesh = ExtResource("42_dt7b5")
+
+[node name="Block-moving-blue" type="MeshInstance3D" parent="."]
+mesh = ExtResource("43_c1tf3")
+
+[node name="Block-moving-large" type="MeshInstance3D" parent="."]
+mesh = ExtResource("44_1gpe7")
+
+[node name="Block-moving" type="MeshInstance3D" parent="."]
+mesh = ExtResource("45_0mfvb")
+
+[node name="Block-snow-corner-low" type="MeshInstance3D" parent="."]
+mesh = ExtResource("46_xglw5")
+
+[node name="Block-snow-corner-overhang-low" type="MeshInstance3D" parent="."]
+mesh = ExtResource("47_a4gb7")
+
+[node name="Block-snow-corner-overhang" type="MeshInstance3D" parent="."]
+mesh = ExtResource("48_moieh")
+
+[node name="Block-snow-corner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("49_1soi4")
+
+[node name="Block-snow-curve-half" type="MeshInstance3D" parent="."]
+mesh = ExtResource("50_ous4l")
+
+[node name="Block-snow-curve-low" type="MeshInstance3D" parent="."]
+mesh = ExtResource("51_8jawo")
+
+[node name="Block-snow-curve" type="MeshInstance3D" parent="."]
+mesh = ExtResource("52_n105u")
+
+[node name="Block-snow-edge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("53_c1e07")
+
+[node name="Block-snow-hexagon" type="MeshInstance3D" parent="."]
+mesh = ExtResource("54_enx2c")
+
+[node name="Block-snow-large-slope-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("55_ihllo")
+
+[node name="Block-snow-large-slope-steep-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("56_k5res")
+
+[node name="Block-snow-large-slope-steep" type="MeshInstance3D" parent="."]
+mesh = ExtResource("57_apysw")
+
+[node name="Block-snow-large-slope" type="MeshInstance3D" parent="."]
+mesh = ExtResource("58_vbd72")
+
+[node name="Block-snow-large-tall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("59_t2vjc")
+
+[node name="Block-snow-large" type="MeshInstance3D" parent="."]
+mesh = ExtResource("60_p2dwd")
+
+[node name="Block-snow-long" type="MeshInstance3D" parent="."]
+mesh = ExtResource("61_0hprx")
+
+[node name="Block-snow-low-hexagon" type="MeshInstance3D" parent="."]
+mesh = ExtResource("62_686c8")
+
+[node name="Block-snow-low-large" type="MeshInstance3D" parent="."]
+mesh = ExtResource("63_71l14")
+
+[node name="Block-snow-low-long" type="MeshInstance3D" parent="."]
+mesh = ExtResource("64_t14t7")
+
+[node name="Block-snow-low-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("65_5sji4")
+
+[node name="Block-snow-low" type="MeshInstance3D" parent="."]
+mesh = ExtResource("66_o4vgl")
+
+[node name="Block-snow-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("67_wiyot")
+
+[node name="Block-snow-overhang-corner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("68_fnnpl")
+
+[node name="Block-snow-overhang-edge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("69_l22tk")
+
+[node name="Block-snow-overhang-hexagon" type="MeshInstance3D" parent="."]
+mesh = ExtResource("70_bpdaa")
+
+[node name="Block-snow-overhang-large-slope-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("71_o5tj5")
+
+[node name="Block-snow-overhang-large-slope-steep-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("72_hlu6f")
+
+[node name="Block-snow-overhang-large-slope-steep" type="MeshInstance3D" parent="."]
+mesh = ExtResource("73_u5vkh")
+
+[node name="Block-snow-overhang-large-slope" type="MeshInstance3D" parent="."]
+mesh = ExtResource("74_hmnlo")
+
+[node name="Block-snow-overhang-large-tall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("75_i8fcr")
+
+[node name="Block-snow-overhang-large" type="MeshInstance3D" parent="."]
+mesh = ExtResource("76_8efdc")
+
+[node name="Block-snow-overhang-long" type="MeshInstance3D" parent="."]
+mesh = ExtResource("77_ahnra")
+
+[node name="Block-snow-overhang-low-hexagon" type="MeshInstance3D" parent="."]
+mesh = ExtResource("78_n4hfx")
+
+[node name="Block-snow-overhang-low-large" type="MeshInstance3D" parent="."]
+mesh = ExtResource("79_qqwdy")
+
+[node name="Block-snow-overhang-low-long" type="MeshInstance3D" parent="."]
+mesh = ExtResource("80_objnj")
+
+[node name="Block-snow-overhang-low-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("81_rdb0l")
+
+[node name="Block-snow-overhang-low" type="MeshInstance3D" parent="."]
+mesh = ExtResource("82_dbadp")
+
+[node name="Block-snow-overhang-narrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("83_d7ucd")
+
+[node name="Block-snow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("84_ccsh7")
+
+[node name="Bomb" type="MeshInstance3D" parent="."]
+mesh = ExtResource("85_ffhn0")
+
+[node name="Button-round" type="MeshInstance3D" parent="."]
+mesh = ExtResource("86_c2bda")
+
+[node name="Button-square" type="MeshInstance3D" parent="."]
+mesh = ExtResource("87_vs5oc")
+
+[node name="Chest" type="MeshInstance3D" parent="."]
+mesh = ExtResource("88_j8ahy")
+
+[node name="Coin-bronze" type="MeshInstance3D" parent="."]
+mesh = ExtResource("89_gk2hp")
+
+[node name="Coin-gold" type="MeshInstance3D" parent="."]
+mesh = ExtResource("90_6eftx")
+
+[node name="Coin-silver" type="MeshInstance3D" parent="."]
+mesh = ExtResource("91_7tpvu")
+
+[node name="Crate-item-strong" type="MeshInstance3D" parent="."]
+mesh = ExtResource("92_731vo")
+
+[node name="Crate-item" type="MeshInstance3D" parent="."]
+mesh = ExtResource("93_6xbmc")
+
+[node name="Crate-strong" type="MeshInstance3D" parent="."]
+mesh = ExtResource("94_14r1p")
+
+[node name="Crate" type="MeshInstance3D" parent="."]
+mesh = ExtResource("95_bphr6")
+
+[node name="Door-large-open" type="MeshInstance3D" parent="."]
+mesh = ExtResource("96_i8rjp")
+
+[node name="Door-open" type="MeshInstance3D" parent="."]
+mesh = ExtResource("97_5rqi0")
+
+[node name="Door-rotate-large" type="MeshInstance3D" parent="."]
+mesh = ExtResource("98_52mdi")
+
+[node name="Door-rotate" type="MeshInstance3D" parent="."]
+mesh = ExtResource("99_xne7b")
+
+[node name="Fence-broken" type="MeshInstance3D" parent="."]
+mesh = ExtResource("100_pmawx")
+
+[node name="Fence-corner-curved" type="MeshInstance3D" parent="."]
+mesh = ExtResource("101_1w53s")
+
+[node name="Fence-corner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("102_mbsru")
+
+[node name="Fence-low-broken" type="MeshInstance3D" parent="."]
+mesh = ExtResource("103_f0bi0")
+
+[node name="Fence-low-corner-curved" type="MeshInstance3D" parent="."]
+mesh = ExtResource("104_s7s2a")
+
+[node name="Fence-low-corner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("105_rs5us")
+
+[node name="Fence-low-straight" type="MeshInstance3D" parent="."]
+mesh = ExtResource("106_6xqq2")
+
+[node name="Fence-straight" type="MeshInstance3D" parent="."]
+mesh = ExtResource("107_ao2l3")
+
+[node name="Flag" type="MeshInstance3D" parent="."]
+mesh = ExtResource("108_vxwtu")
+
+[node name="Flowers-tall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("109_okuwl")
+
+[node name="Flowers" type="MeshInstance3D" parent="."]
+mesh = ExtResource("110_62tb4")
+
+[node name="Grass" type="MeshInstance3D" parent="."]
+mesh = ExtResource("111_u34vb")
+
+[node name="Heart" type="MeshInstance3D" parent="."]
+mesh = ExtResource("112_htgqo")
+
+[node name="Hedge-corner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("113_7pgjp")
+
+[node name="Hedge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("114_hiru4")
+
+[node name="Jewel" type="MeshInstance3D" parent="."]
+mesh = ExtResource("115_e1tk3")
+
+[node name="Key" type="MeshInstance3D" parent="."]
+mesh = ExtResource("116_ohby7")
+
+[node name="Ladder-broken" type="MeshInstance3D" parent="."]
+mesh = ExtResource("117_o3bwj")
+
+[node name="Ladder-long" type="MeshInstance3D" parent="."]
+mesh = ExtResource("118_e2t1b")
+
+[node name="Ladder" type="MeshInstance3D" parent="."]
+mesh = ExtResource("119_pycnh")
+
+[node name="Lever" type="MeshInstance3D" parent="."]
+mesh = ExtResource("120_awnin")
+
+[node name="Lock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("121_hjevh")
+
+[node name="Mushrooms" type="MeshInstance3D" parent="."]
+mesh = ExtResource("122_2wg5b")
+
+[node name="Plant" type="MeshInstance3D" parent="."]
+mesh = ExtResource("123_adybi")
+
+[node name="Platform-fortified" type="MeshInstance3D" parent="."]
+mesh = ExtResource("124_q51sl")
+
+[node name="Platform-overhang" type="MeshInstance3D" parent="."]
+mesh = ExtResource("125_y68x7")
+
+[node name="Platform-ramp" type="MeshInstance3D" parent="."]
+mesh = ExtResource("126_lp1od")
+
+[node name="Platform" type="MeshInstance3D" parent="."]
+mesh = ExtResource("127_87fh8")
+
+[node name="Poles" type="MeshInstance3D" parent="."]
+mesh = ExtResource("128_v0smd")
+
+[node name="Rocks" type="MeshInstance3D" parent="."]
+mesh = ExtResource("129_eire8")
+
+[node name="Saw" type="MeshInstance3D" parent="."]
+mesh = ExtResource("130_lye6x")
+
+[node name="Sign" type="MeshInstance3D" parent="."]
+mesh = ExtResource("131_kpbu5")
+
+[node name="Spike-block-wide" type="MeshInstance3D" parent="."]
+mesh = ExtResource("132_7u7ay")
+
+[node name="Spike-block" type="MeshInstance3D" parent="."]
+mesh = ExtResource("133_vmer3")
+
+[node name="Stones" type="MeshInstance3D" parent="."]
+mesh = ExtResource("134_upkry")
+
+[node name="Trap-spikes-large" type="MeshInstance3D" parent="."]
+mesh = ExtResource("135_dswbx")
+
+[node name="Trap-spikes" type="MeshInstance3D" parent="."]
+mesh = ExtResource("136_g8c21")
+
+[node name="Tree-pine-small" type="MeshInstance3D" parent="."]
+mesh = ExtResource("137_ab8bs")
+
+[node name="Tree-pine-snow-small" type="MeshInstance3D" parent="."]
+mesh = ExtResource("138_51t58")
+
+[node name="Tree-pine-snow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("139_aqmbc")
+
+[node name="Tree-pine" type="MeshInstance3D" parent="."]
+mesh = ExtResource("140_mqpjn")
+
+[node name="Tree-snow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("141_ylifr")
+
+[node name="Tree" type="MeshInstance3D" parent="."]
+mesh = ExtResource("142_q73c1")

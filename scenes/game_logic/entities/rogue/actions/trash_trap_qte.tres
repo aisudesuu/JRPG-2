@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="QTEStats" load_steps=6 format=3 uid="uid://r4vysi5xr57k"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/actions/qte_stats.gd" id="1_8eeu7"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_n52db"]
+device = -1
+keycode = 4194320
+
+[sub_resource type="InputEventKey" id="InputEventKey_1ryrc"]
+device = -1
+keycode = 4194320
+
+[sub_resource type="InputEventKey" id="InputEventKey_y54g5"]
+device = -1
+keycode = 4194319
+
+[sub_resource type="InputEventKey" id="InputEventKey_kwo3e"]
+device = -1
+keycode = 4194322
+
+[resource]
+script = ExtResource("1_8eeu7")
+quick_time_event = 1
+result_bad = 0.75
+result_good = 1.0
+result_great = 1.5
+sequence = Array[InputEventKey]([SubResource("InputEventKey_n52db"), SubResource("InputEventKey_1ryrc"), SubResource("InputEventKey_y54g5"), SubResource("InputEventKey_kwo3e")])

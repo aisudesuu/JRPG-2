@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://du1ejiutonpkl"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/actions/combat_qte_timing.gd" id="1_vm1ge"]
+[ext_resource type="Texture2D" uid="uid://cxs8r58t4p4r5" path="res://icon.svg" id="2_w2tvn"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3yofr"]
+blend_mode = 3
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_gsspc"]
+blend_mode = 2
+
+[node name="TimingQTE" type="Control"]
+material = SubResource("CanvasItemMaterial_3yofr")
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 128.0
+scale = Vector2(0.4, 0.4)
+script = ExtResource("1_vm1ge")
+
+[node name="TimingBar" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_gsspc")
+position = Vector2(320, 64)
+scale = Vector2(5, 1)
+texture = ExtResource("2_w2tvn")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="HitCircle" type="Sprite2D" parent="Node2D"]
+position = Vector2(128, 64)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("2_w2tvn")
+
+[node name="HitCircle2" type="Sprite2D" parent="Node2D"]
+position = Vector2(256, 64)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("2_w2tvn")
+
+[node name="HitCircle3" type="Sprite2D" parent="Node2D"]
+position = Vector2(384, 64)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("2_w2tvn")
+
+[node name="HitCircle4" type="Sprite2D" parent="Node2D"]
+position = Vector2(512, 64)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_w2tvn")

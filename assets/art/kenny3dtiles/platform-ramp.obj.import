@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dp3on54y3hvcf"
+path="res://.godot/imported/platform-ramp.obj-662edf16861d38e230fbac74fb246df3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/platform-ramp.obj-662edf16861d38e230fbac74fb246df3.mesh"]
+
+source_file="res://assets/art/kenny3dtiles/platform-ramp.obj"
+dest_files=["res://.godot/imported/platform-ramp.obj-662edf16861d38e230fbac74fb246df3.mesh", "res://.godot/imported/platform-ramp.obj-662edf16861d38e230fbac74fb246df3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

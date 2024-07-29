@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://2n7pxs1m75a"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/entities/wanderer.gd" id="1_g0gi0"]
+[ext_resource type="Texture2D" uid="uid://cxs8r58t4p4r5" path="res://icon.svg" id="1_mehum"]
+[ext_resource type="Resource" uid="uid://cwnkt6bc85cxq" path="res://scenes/game_logic/entities/tank/tank_stats.tres" id="2_nwu7t"]
+[ext_resource type="Script" path="res://scenes/game_logic/components/interact_component.gd" id="4_rmo6k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kdxqq"]
+size = Vector2(96, 96)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p1jjj"]
+size = Vector2(128, 128)
+
+[node name="TankW" type="CharacterBody2D" node_paths=PackedStringArray("interaction_component")]
+script = ExtResource("1_g0gi0")
+stats = ExtResource("2_nwu7t")
+interaction_component = NodePath("Components/InteractComponent")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mehum")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_kdxqq")
+
+[node name="Area2D" type="Area2D" parent="." groups=["party"]]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_p1jjj")
+
+[node name="Components" type="Node" parent="."]
+
+[node name="InteractComponent" type="Node" parent="Components" node_paths=PackedStringArray("parent", "interact_area")]
+script = ExtResource("4_rmo6k")
+parent = NodePath("../..")
+interact_area = NodePath("../../Area2D")

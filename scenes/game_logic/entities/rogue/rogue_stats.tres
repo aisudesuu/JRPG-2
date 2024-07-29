@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BattlerStatistics" load_steps=4 format=3 uid="uid://bim1lo7v2kp4u"]
+
+[ext_resource type="Resource" uid="uid://ccv2jwlvn2w5r" path="res://scenes/game_logic/entities/rogue/actions/pocket_sand.tres" id="1_31jhl"]
+[ext_resource type="Script" path="res://scenes/game_logic/entities/battler_statistics.gd" id="1_quvv7"]
+[ext_resource type="Resource" uid="uid://d1rlitkmn6gyv" path="res://scenes/game_logic/entities/rogue/actions/trash_trap.tres" id="2_xtchk"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_quvv7")
+max_health = 60
+df_power = 5
+df_defense = 2
+df_speed = 7
+actions = Array[Resource("res://scenes/game_logic/actions/action.gd")]([ExtResource("2_xtchk"), ExtResource("1_31jhl")])
+is_party_member = true

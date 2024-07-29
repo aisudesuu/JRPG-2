@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://4p3eas3m2a60"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/entities/battler.gd" id="1_hdtj0"]
+[ext_resource type="Texture2D" uid="uid://cxs8r58t4p4r5" path="res://icon.svg" id="2_ebr6t"]
+[ext_resource type="Resource" uid="uid://co1u0q1p77yg2" path="res://scenes/game_logic/entities/enemy/test_enemy/test_enemy_stats.tres" id="2_olgg6"]
+[ext_resource type="Script" path="res://scenes/game_logic/components/health_component.gd" id="4_igutc"]
+[ext_resource type="PackedScene" uid="uid://bcm7pqw0h6ic" path="res://scenes/game_logic/components/entity_selector.tscn" id="4_wwcau"]
+[ext_resource type="Script" path="res://scenes/game_logic/components/action_component.gd" id="6_kmfcj"]
+
+[node name="TestEnemy" type="Node2D" node_paths=PackedStringArray("health_component", "action_component", "entity_selector")]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_hdtj0")
+stats = ExtResource("2_olgg6")
+health_component = NodePath("Components/HealthComponent")
+action_component = NodePath("Components/ActionComponent")
+entity_selector = NodePath("Components/EntitySelector")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ebr6t")
+
+[node name="Components" type="Node" parent="."]
+
+[node name="EntitySelector" parent="Components" node_paths=PackedStringArray("parent", "parent_sprite") instance=ExtResource("4_wwcau")]
+parent = NodePath("../..")
+parent_sprite = NodePath("../../Sprite2D")
+
+[node name="HealthComponent" type="Node" parent="Components" node_paths=PackedStringArray("health_display", "health_label")]
+script = ExtResource("4_igutc")
+health_display = NodePath("../../ProgressBar")
+health_label = NodePath("../../Label2")
+
+[node name="ActionComponent" type="Node" parent="Components" node_paths=PackedStringArray("health_component")]
+script = ExtResource("6_kmfcj")
+health_component = NodePath("../HealthComponent")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -60.0
+offset_top = -98.0
+offset_right = 60.0
+offset_bottom = -71.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="."]
+offset_left = -86.0
+offset_top = -56.0
+offset_right = 3.0
+offset_bottom = -33.0
+rotation = -0.349066
+theme_override_font_sizes/font_size = 15
+text = "Test Enemy"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 70.6667
+offset_top = -61.3333
+offset_right = 110.667
+offset_bottom = -38.3333

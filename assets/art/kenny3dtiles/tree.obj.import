@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://vscq3cm662lc"
+path="res://.godot/imported/tree.obj-41e221cb1a4a6c07bc3f68927a476933.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree.obj-41e221cb1a4a6c07bc3f68927a476933.mesh"]
+
+source_file="res://assets/art/kenny3dtiles/tree.obj"
+dest_files=["res://.godot/imported/tree.obj-41e221cb1a4a6c07bc3f68927a476933.mesh", "res://.godot/imported/tree.obj-41e221cb1a4a6c07bc3f68927a476933.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

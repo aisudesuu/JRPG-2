@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcm7pqw0h6ic"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/components/entity_selector.gd" id="1_bmsc0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mfdus"]
+
+[node name="EntitySelector" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mfdus")
+action_mode = 0
+flat = true
+script = ExtResource("1_bmsc0")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

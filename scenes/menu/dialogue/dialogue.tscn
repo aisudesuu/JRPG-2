@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://pfh65uw8jit4"]
+
+[ext_resource type="Script" path="res://scenes/menu/dialogue/dialogue_manager.gd" id="1_li75r"]
+[ext_resource type="Texture2D" uid="uid://cxs8r58t4p4r5" path="res://icon.svg" id="2_ffm7o"]
+
+[node name="Dialogue" type="Control" node_paths=PackedStringArray("dialogue_container", "speaker_name", "text_box")]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_li75r")
+dialogue_container = NodePath("HBoxContainer")
+speaker_name = NodePath("HBoxContainer/VBoxContainer/SpeakerName")
+text_box = NodePath("HBoxContainer/VBoxContainer/TextBox")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -371.5
+offset_top = -128.0
+offset_right = 371.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("2_ffm7o")
+
+[node name="Panel" type="Panel" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+
+[node name="SpeakerName" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Speaker Name"
+
+[node name="TextBox" type="RichTextLabel" parent="HBoxContainer/VBoxContainer"]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 2
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false

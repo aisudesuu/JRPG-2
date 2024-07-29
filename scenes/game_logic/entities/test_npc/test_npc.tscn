@@ -1,0 +1,63 @@
+[gd_scene load_steps=11 format=3 uid="uid://36dktvc561l4"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/entities/test_npc/test_npc.gd" id="1_3jy0b"]
+[ext_resource type="Texture2D" uid="uid://cxs8r58t4p4r5" path="res://icon.svg" id="1_gmr3p"]
+[ext_resource type="Texture2D" uid="uid://b2qs85rpo5scp" path="res://scenes/menu/dialogue/test_portraits.png" id="2_fro5r"]
+[ext_resource type="JSON" path="res://scenes/game_logic/entities/test_npc/test_npc_dialogue.json" id="2_kt3nv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oioq2"]
+atlas = ExtResource("2_fro5r")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a0ll5"]
+atlas = ExtResource("2_fro5r")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idmgx"]
+atlas = ExtResource("2_fro5r")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ed23r"]
+atlas = ExtResource("1_gmr3p")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_27kuu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oioq2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a0ll5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idmgx")
+}],
+"loop": true,
+"name": &"portraits",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ed23r")
+}],
+"loop": true,
+"name": &"world",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8f7aj"]
+size = Vector2(128, 128)
+
+[node name="TestNPC" type="CharacterBody2D"]
+script = ExtResource("1_3jy0b")
+dialogue_file = ExtResource("2_kt3nv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_27kuu")
+animation = &"world"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["party"]]
+shape = SubResource("RectangleShape2D_8f7aj")
+
+[node name="Components" type="Node" parent="."]

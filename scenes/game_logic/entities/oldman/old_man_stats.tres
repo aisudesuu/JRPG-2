@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="BattlerStatistics" load_steps=5 format=3 uid="uid://bet6f6kb6shbc"]
+
+[ext_resource type="Resource" uid="uid://b4nou4vkkjrk2" path="res://scenes/game_logic/entities/oldman/actions/inspiring_word.tres" id="1_4pqgd"]
+[ext_resource type="Script" path="res://scenes/game_logic/entities/battler_statistics.gd" id="1_o4cg8"]
+[ext_resource type="Script" path="res://scenes/game_logic/actions/action.gd" id="1_y0lek"]
+
+[sub_resource type="Resource" id="Resource_o7jhu"]
+script = ExtResource("1_y0lek")
+action_name = "p_test_action"
+action_count = 1
+targets_friend = false
+magic_use = 0
+damage = 10
+hit_rate = 0.95
+heal_percent = 0.0
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_o4cg8")
+max_health = 50
+df_power = 2
+df_defense = 5
+df_speed = 2
+actions = Array[ExtResource("1_y0lek")]([ExtResource("1_4pqgd"), SubResource("Resource_o7jhu")])
+is_party_member = true

@@ -1,0 +1,132 @@
+[gd_scene load_steps=20 format=3 uid="uid://ccvlu6ostvpdh"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/major/turn_manager.gd" id="1_n0iy4"]
+[ext_resource type="PackedScene" uid="uid://4p3eas3m2a60" path="res://scenes/game_logic/entities/enemy/test_enemy/test_enemy.tscn" id="2_gsm1m"]
+[ext_resource type="PackedScene" uid="uid://cw8jqaqh5yx2l" path="res://scenes/game_logic/entities/oldman/old_man.tscn" id="2_hv1rp"]
+[ext_resource type="Resource" uid="uid://b4nou4vkkjrk2" path="res://scenes/game_logic/entities/oldman/actions/inspiring_word.tres" id="3_p0e14"]
+[ext_resource type="Script" path="res://scenes/game_logic/actions/action.gd" id="4_ni2gj"]
+[ext_resource type="Script" path="res://scenes/game_logic/entities/battler_statistics.gd" id="5_6liwt"]
+[ext_resource type="PackedScene" uid="uid://itmop4k6j7o6" path="res://scenes/game_logic/entities/rogue/rogue.tscn" id="6_1pq3o"]
+[ext_resource type="Resource" uid="uid://d1rlitkmn6gyv" path="res://scenes/game_logic/entities/rogue/actions/trash_trap.tres" id="7_7h4oo"]
+[ext_resource type="PackedScene" uid="uid://qjaxovg7absy" path="res://scenes/game_logic/entities/tank/tank.tscn" id="8_teti2"]
+[ext_resource type="Resource" uid="uid://ccv2jwlvn2w5r" path="res://scenes/game_logic/entities/rogue/actions/pocket_sand.tres" id="8_yvtrg"]
+[ext_resource type="Resource" uid="uid://bsli1oruth2r6" path="res://scenes/game_logic/entities/tank/actions/bear_hug.tres" id="10_f67yv"]
+
+[sub_resource type="Resource" id="Resource_o7jhu"]
+script = ExtResource("4_ni2gj")
+action_name = "p_test_action"
+action_count = 1
+targets_friend = false
+magic_use = 0
+damage = 10
+hit_rate = 0.95
+heal_percent = 0.0
+
+[sub_resource type="Resource" id="Resource_q4045"]
+resource_local_to_scene = true
+script = ExtResource("5_6liwt")
+max_health = 50
+df_power = 2
+df_defense = 5
+df_speed = 2
+actions = Array[ExtResource("4_ni2gj")]([ExtResource("3_p0e14"), SubResource("Resource_o7jhu")])
+is_party_member = true
+
+[sub_resource type="Resource" id="Resource_qw2es"]
+resource_local_to_scene = true
+script = ExtResource("5_6liwt")
+max_health = 60
+df_power = 5
+df_defense = 2
+df_speed = 7
+actions = Array[ExtResource("4_ni2gj")]([ExtResource("7_7h4oo"), ExtResource("8_yvtrg")])
+is_party_member = true
+
+[sub_resource type="Resource" id="Resource_4mcbg"]
+script = ExtResource("4_ni2gj")
+action_name = "Hammer Slammer"
+action_count = 1
+targets_friend = false
+magic_use = 0
+damage = 15
+hit_rate = 0.88
+heal_percent = 0.0
+
+[sub_resource type="Resource" id="Resource_qrgm3"]
+resource_local_to_scene = true
+script = ExtResource("5_6liwt")
+max_health = 80
+df_power = 5
+df_defense = 7
+df_speed = 3
+actions = Array[ExtResource("4_ni2gj")]([ExtResource("10_f67yv"), SubResource("Resource_4mcbg")])
+is_party_member = true
+
+[sub_resource type="Resource" id="Resource_83hon"]
+script = ExtResource("4_ni2gj")
+action_name = "e_test_action"
+action_count = 1
+targets_friend = false
+magic_use = 0
+damage = 10
+hit_rate = 0.95
+heal_percent = 0.0
+
+[sub_resource type="Resource" id="Resource_e64k3"]
+resource_local_to_scene = true
+script = ExtResource("5_6liwt")
+max_health = 30
+df_power = 4
+df_defense = 4
+df_speed = 4
+actions = Array[ExtResource("4_ni2gj")]([SubResource("Resource_83hon")])
+is_party_member = false
+
+[sub_resource type="Resource" id="Resource_2vohd"]
+resource_local_to_scene = true
+script = ExtResource("5_6liwt")
+max_health = 30
+df_power = 4
+df_defense = 4
+df_speed = 4
+actions = Array[ExtResource("4_ni2gj")]([SubResource("Resource_83hon")])
+is_party_member = false
+
+[node name="TurnManager" type="Node"]
+script = ExtResource("1_n0iy4")
+
+[node name="Friend" type="Node" parent="."]
+
+[node name="OldMan" parent="Friend" instance=ExtResource("2_hv1rp")]
+stats = SubResource("Resource_q4045")
+
+[node name="Rogue" parent="Friend" instance=ExtResource("6_1pq3o")]
+stats = SubResource("Resource_qw2es")
+
+[node name="Tank" parent="Friend" instance=ExtResource("8_teti2")]
+stats = SubResource("Resource_qrgm3")
+
+[node name="Foe" type="Node" parent="."]
+
+[node name="TestEnemy" parent="Foe" instance=ExtResource("2_gsm1m")]
+stats = SubResource("Resource_e64k3")
+
+[node name="TestEnemy2" parent="Foe" instance=ExtResource("2_gsm1m")]
+stats = SubResource("Resource_2vohd")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -0.5
+offset_right = 0.5
+offset_bottom = 34.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 24

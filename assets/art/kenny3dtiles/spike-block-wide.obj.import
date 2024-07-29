@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkjqa4byw5u3v"
+path="res://.godot/imported/spike-block-wide.obj-af3a58a6dc8c1649597f89d81c7abbdc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/spike-block-wide.obj-af3a58a6dc8c1649597f89d81c7abbdc.mesh"]
+
+source_file="res://assets/art/kenny3dtiles/spike-block-wide.obj"
+dest_files=["res://.godot/imported/spike-block-wide.obj-af3a58a6dc8c1649597f89d81c7abbdc.mesh", "res://.godot/imported/spike-block-wide.obj-af3a58a6dc8c1649597f89d81c7abbdc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

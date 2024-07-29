@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://df8w5h244j41j"]
+
+[ext_resource type="PackedScene" uid="uid://be71hrx68fvo4" path="res://scenes/game_logic/major/world_manager.tscn" id="1_60d64"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="WorldManager" parent="." instance=ExtResource("1_60d64")]

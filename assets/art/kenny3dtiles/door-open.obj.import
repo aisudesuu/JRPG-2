@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://7gtv0cnru2ls"
+path="res://.godot/imported/door-open.obj-0dd19ab9a709af8f241f625f8d87eeef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/door-open.obj-0dd19ab9a709af8f241f625f8d87eeef.mesh"]
+
+source_file="res://assets/art/kenny3dtiles/door-open.obj"
+dest_files=["res://.godot/imported/door-open.obj-0dd19ab9a709af8f241f625f8d87eeef.mesh", "res://.godot/imported/door-open.obj-0dd19ab9a709af8f241f625f8d87eeef.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

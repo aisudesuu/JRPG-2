@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ddrcabulj4g5c"
+path="res://.godot/imported/crate.obj-38d2ca2ecc6390f5c23a54004a7fadd8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crate.obj-38d2ca2ecc6390f5c23a54004a7fadd8.mesh"]
+
+source_file="res://assets/art/kenny3dtiles/crate.obj"
+dest_files=["res://.godot/imported/crate.obj-38d2ca2ecc6390f5c23a54004a7fadd8.mesh", "res://.godot/imported/crate.obj-38d2ca2ecc6390f5c23a54004a7fadd8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

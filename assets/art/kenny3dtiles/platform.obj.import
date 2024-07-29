@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bpxohsripoggq"
+path="res://.godot/imported/platform.obj-c008620312c7911ccf27c81b5d84dd38.mesh"
+
+[deps]
+
+files=["res://.godot/imported/platform.obj-c008620312c7911ccf27c81b5d84dd38.mesh"]
+
+source_file="res://assets/art/kenny3dtiles/platform.obj"
+dest_files=["res://.godot/imported/platform.obj-c008620312c7911ccf27c81b5d84dd38.mesh", "res://.godot/imported/platform.obj-c008620312c7911ccf27c81b5d84dd38.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

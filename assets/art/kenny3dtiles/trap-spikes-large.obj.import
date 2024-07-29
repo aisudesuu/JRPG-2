@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhmtyhllj6qsv"
+path="res://.godot/imported/trap-spikes-large.obj-e1a14a95753fb8dcc030e9a6c8dc1c36.mesh"
+
+[deps]
+
+files=["res://.godot/imported/trap-spikes-large.obj-e1a14a95753fb8dcc030e9a6c8dc1c36.mesh"]
+
+source_file="res://assets/art/kenny3dtiles/trap-spikes-large.obj"
+dest_files=["res://.godot/imported/trap-spikes-large.obj-e1a14a95753fb8dcc030e9a6c8dc1c36.mesh", "res://.godot/imported/trap-spikes-large.obj-e1a14a95753fb8dcc030e9a6c8dc1c36.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

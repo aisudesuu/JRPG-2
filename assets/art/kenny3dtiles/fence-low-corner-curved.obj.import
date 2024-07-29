@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b74jk1brdlny1"
+path="res://.godot/imported/fence-low-corner-curved.obj-7d9030ddaa5cb3c7a2c5c01eee6ef2a2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence-low-corner-curved.obj-7d9030ddaa5cb3c7a2c5c01eee6ef2a2.mesh"]
+
+source_file="res://assets/art/kenny3dtiles/fence-low-corner-curved.obj"
+dest_files=["res://.godot/imported/fence-low-corner-curved.obj-7d9030ddaa5cb3c7a2c5c01eee6ef2a2.mesh", "res://.godot/imported/fence-low-corner-curved.obj-7d9030ddaa5cb3c7a2c5c01eee6ef2a2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

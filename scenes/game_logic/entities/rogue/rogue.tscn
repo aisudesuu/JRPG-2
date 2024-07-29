@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://itmop4k6j7o6"]
+
+[ext_resource type="Script" path="res://scenes/game_logic/entities/battler.gd" id="1_w7kn5"]
+[ext_resource type="Resource" uid="uid://bim1lo7v2kp4u" path="res://scenes/game_logic/entities/rogue/rogue_stats.tres" id="2_8cf1r"]
+[ext_resource type="Texture2D" uid="uid://cxs8r58t4p4r5" path="res://icon.svg" id="3_81a23"]
+[ext_resource type="PackedScene" uid="uid://bcm7pqw0h6ic" path="res://scenes/game_logic/components/entity_selector.tscn" id="4_k8cp7"]
+[ext_resource type="Script" path="res://scenes/game_logic/components/health_component.gd" id="5_7osfx"]
+[ext_resource type="Script" path="res://scenes/game_logic/components/action_component.gd" id="6_mnyfm"]
+
+[node name="Rogue" type="Node2D" node_paths=PackedStringArray("health_component", "action_component", "entity_selector")]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_w7kn5")
+stats = ExtResource("2_8cf1r")
+health_component = NodePath("Components/HealthComponent")
+action_component = NodePath("Components/ActionComponent")
+entity_selector = NodePath("Components/EntitySelector")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_81a23")
+
+[node name="Components" type="Node" parent="."]
+
+[node name="EntitySelector" parent="Components" node_paths=PackedStringArray("parent", "parent_sprite") instance=ExtResource("4_k8cp7")]
+parent = NodePath("../..")
+parent_sprite = NodePath("../../Sprite2D")
+
+[node name="HealthComponent" type="Node" parent="Components" node_paths=PackedStringArray("health_display")]
+script = ExtResource("5_7osfx")
+health_display = NodePath("../../ProgressBar")
+
+[node name="ActionComponent" type="Node" parent="Components" node_paths=PackedStringArray("health_component")]
+script = ExtResource("6_mnyfm")
+health_component = NodePath("../HealthComponent")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -59.0
+offset_top = -98.0
+offset_right = 61.0
+offset_bottom = -71.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="."]
+offset_left = -80.0
+offset_top = -60.0
+offset_right = 9.0
+offset_bottom = -37.0
+rotation = -0.349066
+text = "Rogue"
+metadata/_edit_use_anchors_ = true
